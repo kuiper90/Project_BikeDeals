@@ -20,5 +20,15 @@ namespace BikeDeals
         {
             return (endDate.Subtract(startDate).Days);
         }
+
+        public DateTime GetStartDate()
+        {
+            return (this.startDate);
+        }
+
+        public DateTime GetEndDate()
+        {
+            return (this.endDate);
+        }
     }
 }
