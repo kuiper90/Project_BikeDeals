@@ -24,6 +24,11 @@ namespace BikeDeals
             this.rentalEntries.Add(bikeId, bikeRentalEntries);
         }
 
+        public List<Bike> GetBikeList()
+        {
+            return (this.bicycleList);
+        }
+
         private bool RentalEntryOverlap(RentalEntry entry, DateTime startDate, DateTime endDate)
         {
             return ((entry.GetStartDate() <= endDate) && (startDate <= entry.GetEndDate()));
